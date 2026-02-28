@@ -83,7 +83,7 @@ export const profileConfig: ProfileConfig = {
 			name: "ORCID",
 			icon: "fa6-brands:orcid",
 			url: "https://orcid.org/0009-0007-2477-5379",
-		}
+		},
 	],
 };
 

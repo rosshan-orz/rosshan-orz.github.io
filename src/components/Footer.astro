@@ -18,10 +18,11 @@ const currentYear = new Date().getFullYear();
         Powered by
         <a class="transition link text-[var(--primary)] font-medium" target="_blank" href="https://astro.build">Astro</a> &
         <a class="transition link text-[var(--primary)] font-medium" target="_blank" href="https://github.com/saicaca/fuwari">Fuwari</a>
-        <div class="flex justify-center mt-0.5"> <span id="busuanzi_container_site_pv" class="hidden items-center gap-1 opacity-60 text-[0.75rem]">
-                <Icon name="material-symbols:group-outline" class="text-base" /> 
-                <span id="busuanzi_value_site_pv" class="font-bold"></span> Total Visits
-            </span>
+        <div id="busuanzi_container_site_pv" class="hidden mt-1">
+            <div class="flex items-center justify-center gap-1 opacity-60 text-[0.75rem]">
+            <Icon name="material-symbols:group-outline" class="text-base" /> 
+            <span><span id="busuanzi_value_site_pv" class="font-bold"></span> Total Visits</span>
+            </div>
         </div>
     </div>
 </div>

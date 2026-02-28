@@ -84,6 +84,11 @@ export const profileConfig: ProfileConfig = {
 			icon: "fa6-brands:orcid",
 			url: "https://orcid.org/0009-0007-2477-5379",
 		},
+		{
+			name: "Google Scholar",
+			icon: "fa6-brands:google-scholar",
+			url: "https://scholar.google.com/citations?user=1Pa7dBkAAAAJ&hl=en",
+		},
 	],
 };
 

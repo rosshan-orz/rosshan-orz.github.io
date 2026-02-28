@@ -2,6 +2,7 @@
 
 import { profileConfig } from "../config";
 import { url } from "../utils/url-utils";
+import { Icon } from "astro-icon/components";
 
 const currentYear = new Date().getFullYear();
 ---
@@ -17,5 +18,24 @@ const currentYear = new Date().getFullYear();
         Powered by
         <a class="transition link text-[var(--primary)] font-medium" target="_blank" href="https://astro.build">Astro</a> &
         <a class="transition link text-[var(--primary)] font-medium" target="_blank" href="https://github.com/saicaca/fuwari">Fuwari</a>
+        <div class="flex justify-center mt-0.5"> <span id="busuanzi_container_site_pv" class="hidden items-center gap-1 opacity-60 text-[0.75rem]">
+                <Icon name="material-symbols:group-outline" class="text-base" /> 
+                <span id="busuanzi_value_site_pv" class="font-bold"></span> Total Visits
+            </span>
+        </div>
     </div>
 </div>
+
+<script is:inline>
+    // 不蒜子脚本加载后会自动移除 'hidden' 类或设置 display
+    // 这里强制确保加载后使用 flex 布局
+    const container = document.getElementById('busuanzi_container_site_pv');
+    const observer = new MutationObserver(() => {
+        if (container.style.display !== 'none') {
+            container.style.display = 'flex';
+        }
+    });
+    if (container) {
+        observer.observe(container, { attributes: true, attributeFilter: ['style'] });
+    }
+</script>

@@ -122,4 +122,29 @@ const mainPanelTop = siteConfig.banner.enable
         {!siteConfig.toc.enable && <div id="toc"></div>}
     </div>
 </div>
+<script is:inline async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<style is:global>
+/* 评论区域样式 */
+.comments-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
+
+/* Giscus 容器样式 */
+.giscus {
+    margin-top: 1.5rem;
+    min-height: 300px;
+    border-radius: var(--radius-large);
+    overflow: hidden;
+}
+
+/* 暗色模式适配 */
+:global(html.dark) .giscus-frame {
+    color-scheme: dark;
+}
+
+</style>
+
 </Layout>
